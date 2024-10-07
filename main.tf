@@ -64,4 +64,10 @@ resource "keycloak_role" "client_role_a" {
 }
 
 
+resource "keycloak_role" "client_role_b" {
+  realm_id    = keycloak_realm.realm.id
+  client_id   = keycloak_openid_client.openid_client.id
+  name        = "my-client-roleB"
+  description = "My Client RoleB"
+}
 
