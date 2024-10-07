@@ -65,4 +65,3 @@ resource "keycloak_role" "client_role_a" {
 
 
 
-
